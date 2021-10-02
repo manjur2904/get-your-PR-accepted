@@ -17,6 +17,9 @@ Bottom-up DP utilizes a matrix m where we track LCS sizes for each combination o
 If a[i] == b[j], LCS for i and j would be 1 plus LCS till the i-1 and j-1 indexes.
 Otherwise, we will take the largest LCS if we skip a charracter from one of the string (max(m[i - 1][j], m[i][j - 1]).
 
+Time complexity - O(n^2)
+Space complexity - O(n^2)
+
 */
 
 #include<bits/stdc++.h>
